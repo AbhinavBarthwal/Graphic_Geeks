@@ -21,16 +21,18 @@ const TeamList = ({ setHover }) => {
     <div className="w-full min-h-screen flex flex-col justify-center items-center p-8 sm:p-10 lg:p-20">
       <div className="w-full max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         {teams.map((team, index) => (
-          <div
+          <Link
             key={index}
+            to={team.link}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className={`team-item ${team.color} p-4 sm:p-6 lg:p-8 text-center flex items-center justify-center transition-transform transform hover:scale-105 rounded-lg`}
+            style={{ textDecoration: 'none' }}
           >
-            <Link to={team.link} className="block text-center font-bold text-base sm:text-lg lg:text-xl hover:underline">
+            <div className="block text-center font-bold text-base sm:text-lg lg:text-xl">
               {team.name}
-            </Link>
-          </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
