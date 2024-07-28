@@ -81,7 +81,7 @@ const teamMembers1 = [
     gmail: "mailto:22021572@geu.ac.in",
   },
   {
-    name: "Shauryman Singh Taragi",
+    name: "Shauryaman Singh Taragi",
     position: "Vice President",
     image: "/shauraman.jpg",
     linkedin: "https://www.linkedin.com/in/shauryaman-singh-taragi-b57305250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
