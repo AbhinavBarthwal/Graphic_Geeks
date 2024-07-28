@@ -36,10 +36,10 @@ const ContactusPage = () => {
 
     emailjs
       .send(
-        "service_z6hr6zc", // Service ID
-        "template_qahr7ci", // Template ID
+        "service_mjeky4r", // Service ID
+        "template_0bx8cv5", // Template ID
         templateParams,
-        "3XlebVxJdxeXsxE_X" // User ID
+        "zHa2bx2ptkqnMsxdK" // User ID
       )
       .then(
         (response) => {

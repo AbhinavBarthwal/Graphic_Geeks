@@ -37,6 +37,13 @@ const teamMembers1 = [
       "https://www.linkedin.com/in/sameer-singhal-452a17214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     gmail: "mailto:sameersinghal907@gmail.com",
   },
+  {
+    name: "Riya Malhotra",
+    position: "Member",
+    image: "/riya_m.jpg",
+    linkedin: "https://www.linkedin.com/in/riya-malhotra-2739592ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    gmail: "riyamalhotra1134@gmail.con",
+  }
 ];
 
 const Editorial = () => {

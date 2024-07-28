@@ -30,6 +30,13 @@ const menuItemVariants = {
 
 const teamMembers1 = [
   {
+    name: "Abhinav Barthwal",
+    position: "Member",
+    image: "/abhinav_b.jpg",
+    linkedin: "https://www.linkedin.com/in/abhinav-barthwal-1582a0258/",
+    gmail: "Abhinavbarthwal212@gmail.com",
+  },
+  {
     name: "Divyam Sirswal",
     position: "Member",
     image: "/divyam.jpg",
