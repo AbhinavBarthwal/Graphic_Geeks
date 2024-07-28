@@ -26,7 +26,7 @@ const TeamList = ({ setHover }) => {
             to={team.link}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className={`team-item ${team.color} p-4 sm:p-6 lg:p-8 text-center flex items-center justify-center transition-transform transform hover:scale-105 rounded-lg`}
+            className={`team-item ${team.color} pt-20vh md:pt-0 p-4 sm:p-6 lg:p-8 text-center flex items-center justify-center transition-transform transform hover:scale-105 rounded-lg`}
             style={{ textDecoration: 'none' }}
           >
             <div className="block text-center font-bold text-base sm:text-lg lg:text-xl">
