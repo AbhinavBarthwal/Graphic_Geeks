@@ -9,7 +9,7 @@ const navLinks = [
     { title: 'Events', url: '/events' },
     { title: 'Resources', url: '/resources' },
     { title: 'Team', url: '/teamrender' },
-    { title: 'Join Us', url: '/joinus' },
+    { title: 'Join Us', url: 'https://forms.gle/4QDbDdNBTfHYCUAB6' }, 
     { title: 'Contact', url: '/contactus' }
 ];
 
@@ -47,13 +47,25 @@ const Navbar = () => {
                         <ul className="flex-grow flex justify-center gap-8 md:gap-16 items-center text-center">
                             {navLinks.map((link, index) => (
                                 <li key={index} className="text-sm text-white">
-                                    <Link
-                                        to={link.url}
-                                        className="text-white cursor-pointer px-3 py-2 rounded transition duration-200 ease-in-out hover:bg-white hover:text-gray-800"
-                                        style={{ userSelect: 'none' }}
-                                    >
-                                        {link.title}
-                                    </Link>
+                                    {link.title === 'Join Us' ? (
+                                        <a
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-white cursor-pointer px-3 py-2 rounded transition duration-200 ease-in-out hover:bg-white hover:text-gray-800"
+                                            style={{ userSelect: 'none' }}
+                                        >
+                                            {link.title}
+                                        </a>
+                                    ) : (
+                                        <Link
+                                            to={link.url}
+                                            className="text-white cursor-pointer px-3 py-2 rounded transition duration-200 ease-in-out hover:bg-white hover:text-gray-800"
+                                            style={{ userSelect: 'none' }}
+                                        >
+                                            {link.title}
+                                        </Link>
+                                    )}
                                 </li>
                             ))}
                         </ul>
@@ -75,14 +87,27 @@ const Navbar = () => {
                             <div className="flex flex-col gap-8 items-center justify-center h-full">
                                 {navLinks.map((link, index) => (
                                     <span key={index} className="text-2xl text-white">
-                                        <Link
-                                            to={link.url}
-                                            className="text-white cursor-pointer px-3 py-2 rounded transition duration-200 ease-in-out hover:bg-white hover:text-gray-800"
-                                            style={{ userSelect: 'none' }}
-                                            onClick={toggleModal}
-                                        >
-                                            {link.title}
-                                        </Link>
+                                        {link.title === 'Join Us' ? (
+                                            <a
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-white cursor-pointer px-3 py-2 rounded transition duration-200 ease-in-out hover:bg-white hover:text-gray-800"
+                                                style={{ userSelect: 'none' }}
+                                                onClick={toggleModal}
+                                            >
+                                                {link.title}
+                                            </a>
+                                        ) : (
+                                            <Link
+                                                to={link.url}
+                                                className="text-white cursor-pointer px-3 py-2 rounded transition duration-200 ease-in-out hover:bg-white hover:text-gray-800"
+                                                style={{ userSelect: 'none' }}
+                                                onClick={toggleModal}
+                                            >
+                                                {link.title}
+                                            </Link>
+                                        )}
                                     </span>
                                 ))}
                             </div>
